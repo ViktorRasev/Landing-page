@@ -61,7 +61,7 @@ section {
 
 
 .portfolio { 
- background: url("/Landing-page/Img/space_ship.jpg") no-repeat center / cover;
+ background: url("../Img/space_ship.jpg") no-repeat center / cover;
   @include flex-column();
   color:$default-text-color; 
   padding-top: 5rem;
@@ -84,7 +84,7 @@ section {
 }
 
 .skills_contact { 
-  background: url("/Landing-page/Img/LIUBPxK.jpg") no-repeat center / cover;
+  background: url("../Img/LIUBPxK.jpg") no-repeat center / cover;
   background-attachment: fixed;
   background-color: black;
 }
