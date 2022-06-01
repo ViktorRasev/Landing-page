@@ -3,11 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
+  color: rgb(239, 239, 239);
 }
 
 a {
   text-decoration: none;
-  color: rgb(239, 239, 239);
 }
 
 ul {
@@ -26,7 +26,6 @@ header {
   height: 4rem;
 }
 header h1 {
-  color: rgb(239, 239, 239);
   font-weight: 400;
 }
 header nav {
@@ -53,19 +52,16 @@ section {
   flex-direction: row;
   width: 50rem;
   margin: 0 auto;
-  color: rgb(239, 239, 239);
 }
 .about .about-content h1 {
   font-size: 50px;
   font-weight: 500;
-  color: rgb(255, 255, 255);
 }
 
 .portfolio {
   background: url("../Img/space_ship.jpg") no-repeat center/cover;
   display: flex;
   flex-direction: column;
-  color: rgb(239, 239, 239);
   padding-top: 5rem;
 }
 
@@ -93,15 +89,26 @@ section {
 .skills_contact {
   background: url("../Img/LIUBPxK.jpg") no-repeat center/cover;
   background-attachment: fixed;
-  background-color: black;
 }
-
-.skills {
+.skills_contact .skills_contact-content {
   display: flex;
-  flex-direction: column;
-  color: rgb(239, 239, 239);
-  align-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
 }
-.skills img {
+.skills_contact .skills_contact-content li {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0;
+}
+.skills_contact .skills_contact-content a {
+  display: flex;
+  flex-direction: row;
+}
+.skills_contact .skills_contact-content img {
   width: 3rem;
+}
+.skills_contact .skills_contact-content p {
+  margin: 20px 0 0 10px;
 }/*# sourceMappingURL=style.css.map */
