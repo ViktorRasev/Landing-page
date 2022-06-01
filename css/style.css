@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(239, 239, 239);
+}
+
+header {
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1c1c1c;
+  width: 100%;
+  height: 4rem;
+}
+header h1 {
+  color: rgb(239, 239, 239);
+}
+header nav {
+  width: 20rem;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header ul:last-child {
+  color: red;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.about {
+  background: url("/Landing-page/Img/LIUBPxK.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  background-color: black;
+}
+.about .about-content {
+  display: flex;
+  flex-direction: row;
+  width: 50rem;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.344);
+  color: rgb(239, 239, 239);
+}
+
+.portfolio {
+  background: url("/Landing-page/Img/space_ship.jpg") no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  color: rgb(239, 239, 239);
+  padding-top: 5rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+}
+.projects img {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 2px white solid;
+}
+
+.project {
+  text-align: center;
+}
+
+.skills_contact {
+  background: url("/Landing-page/Img/LIUBPxK.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  background-color: black;
+}/*# sourceMappingURL=style.css.map */
