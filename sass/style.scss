@@ -11,7 +11,12 @@
 
 a {
   text-decoration: none;
+  transition: all 200ms ease-in-out;
 }
+a:hover { 
+  color: aqua
+}
+
 
 ul {
   list-style: none;
@@ -32,7 +37,7 @@ header {
   }
 
   nav {
-    width: 20em;
+    width: 25rem;
   }
 
   ul {
@@ -63,25 +68,34 @@ section {
   }
 } 
 
-
+// =============================== 2 SECTION (PORTFOLIO) ============================
 .portfolio {
   background: url("../Img/space_ship.jpg") no-repeat center / cover;
   @include flex-column();
   padding-top: 5rem;
 }
+
+.projects-title {
+  margin-bottom:5rem;
+  font-size: 2em;
+}
+
 .projects {
   @include flex-row();
   justify-content: space-around;
   width: 90%;
+  
+
 
   img {
     width: 90%;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 20px;
     border: 2px white solid;
+    transition: all 200ms ease-in-out;
 
     &:hover {
-      border: 2px red solid;
+      border: 4px aqua solid;
       cursor: pointer;
     }
   }
@@ -118,6 +132,14 @@ section {
 
     p {
       margin: 20px 0 0 10px;
+      transition: all 200ms ease-in-out;
+      &:hover { 
+        color: aqua
+      }
     }
   }
 }
+
+
+// BURGER  =================
+@include Hamburger();
