@@ -5,12 +5,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: $oxygen-font;
+  font-family: 'Quicksand', sans-serif;
 }
 
 a { 
   text-decoration: none;  
   color: $default-text-color;
+}
+
+ul{
+  list-style: none;
 }
 
 header {
@@ -25,14 +29,14 @@ header {
 
   h1 {
     color: $default-text-color;
+    font-weight: 400;
   }
 
   nav{
-    width:20rem;
+    width:20em;
   }
 
   ul {
-    list-style: none;
     @include flex-row();
     justify-content: space-around;
   }
@@ -47,14 +51,20 @@ section {
 .about {
   background: url("../Img/LIUBPxK.jpg") no-repeat center / cover;
   background-attachment: fixed;
-  background-color: black;
+  // background-color: #222837;
  
 
   .about-content {  
     @include flex-row();
     @include centered-div();
-    background-color: rgba(255, 255, 255, 0.344);
+    
     color: $default-text-color;
+ 
+    h1 {
+      font-size: 50px;
+      font-weight: 500;
+      color: rgb(255, 255, 255);
+    }
   }
  
 }
@@ -76,17 +86,36 @@ section {
     margin: 0 auto;
     border-radius:10px ;
     border: 2px white solid;
+    
+    &:hover  { 
+      border: 2px red solid;
+      cursor: pointer;
+    }
+   
   }
 }
 
 .project { 
  text-align: center;
+
+
 }
 
 .skills_contact { 
   background: url("../Img/LIUBPxK.jpg") no-repeat center / cover;
   background-attachment: fixed;
+
+  
   background-color: black;
 }
 
 
+.skills { 
+  @include flex-column();
+  color: $default-text-color;
+  align-content: space-around;
+
+  img { 
+    width: 3rem;
+  }
+}

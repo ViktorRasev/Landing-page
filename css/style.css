@@ -2,12 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 a {
   text-decoration: none;
   color: rgb(239, 239, 239);
+}
+
+ul {
+  list-style: none;
 }
 
 header {
@@ -23,12 +27,12 @@ header {
 }
 header h1 {
   color: rgb(239, 239, 239);
+  font-weight: 400;
 }
 header nav {
-  width: 20rem;
+  width: 20em;
 }
 header ul {
-  list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -43,15 +47,18 @@ section {
 .about {
   background: url("../Img/LIUBPxK.jpg") no-repeat center/cover;
   background-attachment: fixed;
-  background-color: black;
 }
 .about .about-content {
   display: flex;
   flex-direction: row;
   width: 50rem;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.344);
   color: rgb(239, 239, 239);
+}
+.about .about-content h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
 }
 
 .portfolio {
@@ -74,6 +81,10 @@ section {
   border-radius: 10px;
   border: 2px white solid;
 }
+.projects img:hover {
+  border: 2px red solid;
+  cursor: pointer;
+}
 
 .project {
   text-align: center;
@@ -83,4 +94,14 @@ section {
   background: url("../Img/LIUBPxK.jpg") no-repeat center/cover;
   background-attachment: fixed;
   background-color: black;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  color: rgb(239, 239, 239);
+  align-content: space-around;
+}
+.skills img {
+  width: 3rem;
 }/*# sourceMappingURL=style.css.map */
