@@ -35,10 +35,6 @@ header {
     list-style: none;
     @include flex-row();
     justify-content: space-around;
-
-    &:last-child { 
-      color: red;
-    }
   }
 }
 
@@ -49,7 +45,7 @@ section {
 }
 
 .about {
-  background: url("/Landing-page/Img/LIUBPxK.jpg") no-repeat center / cover;
+  background: url("../Img/LIUBPxK.jpg") no-repeat center / cover;
   background-attachment: fixed;
   background-color: black;
  
