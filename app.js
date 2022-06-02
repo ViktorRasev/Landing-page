@@ -18,14 +18,11 @@ const portfolioSection = document.querySelector(".portfolio")
 const skillsSection = document.querySelector(".skills")
 const contactSection = document.querySelector(".contact")
 
-console.log(portfolioSection)
-
 
 menuBtn.addEventListener("click", () => { 
     menuBtn.classList.toggle("active")
     navMenu.classList.toggle("active")
 })
-
 
 
 navLinks.forEach((link) => { 
@@ -37,50 +34,18 @@ navLinks.forEach((link) => {
 
 
 
-aboutBtn.addEventListener("click", (e) => {
-e.preventDefault()
+// Scrolling via nav menu 
+function navScroll(navBtn, section) { 
+navBtn.addEventListener("click", (e) => {
+    e.preventDefault()
     window.scrollTo({
-        top:aboutSection.offsetTop
+        top:section.offsetTop
     })
 })
+}
 
-portfolioSection.addEventListener("click", (e) => {
-    e.preventDefault()
-        window.scrollTo({
-            top:portfolioSection.offsetTop
-        })
-    })
+navScroll(aboutBtn, aboutSection)
+navScroll(portfolioBtn, portfolioSection)
+navScroll(skillsBtn, skillsSection)
+navScroll(contactBtn, contactSection)
 
-   skillsBtn.addEventListener("click", (e) => {
-        e.preventDefault()
-            window.scrollTo({
-                top:skillsSection.offsetTop
-            })
-        })
-        contactBtn.addEventListener("click", (e) => {
-            e.preventDefault()
-                window.scrollTo({
-                    top:contactSection.offsetTop
-                })
-            })
-                        
-
-
-
-
-// portfolioBtn.addEventListener("click", () => { 
-//     menuBtn.classList.remove("active")
-//     navMenu.classList.remove("active")
-// })
-// skillsBtn.addEventListener("click", () => { 
-//     menuBtn.classList.remove("active")
-//     navMenu.classList.remove("active")
-// })
-// aboutBtn.addEventListener("click", () => { 
-//     menuBtn.classList.remove("active")
-//     navMenu.classList.remove("active")
-// })
-// contactBtn.addEventListener("click", () => { 
-//     menuBtn.classList.remove("active")
-//     navMenu.classList.remove("active")
-// })
