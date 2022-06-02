@@ -69,6 +69,11 @@ a:hover {
   color: aqua;
 }
 
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
 ul {
   list-style: none;
 }
@@ -225,9 +230,6 @@ section {
 .skills_contact .skills_contact-content .contact {
   margin-top: 3rem;
 }
-.skills_contact .skills_contact-content h2 {
-  font-size: 2rem;
-}
 .skills_contact .skills_contact-content li {
   display: flex;
   flex-direction: row;
@@ -236,6 +238,9 @@ section {
 .skills_contact .skills_contact-content a {
   display: flex;
   flex-direction: row;
+}
+.skills_contact .skills_contact-content a p:hover {
+  color: aqua;
 }
 .skills_contact .skills_contact-content img {
   width: 3em;
