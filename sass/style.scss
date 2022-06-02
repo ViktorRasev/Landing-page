@@ -78,6 +78,12 @@ header {
    }
 
  }
+
+ @media (max-width:450px) {
+  .title-name { 
+    font-size: 1.5rem;
+        }
+ }
 }
 
 section {
@@ -85,13 +91,13 @@ section {
   align-items: center;
 }
 
-// =============================== 1 SECTION (ABOUT) =====================================
-.about {
+// =============================== 1 SECTION (HOME) =====================================
+.home {
   background: url("../Img/LIUBPxK.jpg") no-repeat center / cover;
   background-attachment: fixed;
   height: 100vh;
 
-  .about-content {
+  .home-content {
     @include flex-row();
     @include centered-div();
 

@@ -123,29 +123,34 @@ header .nav-menu {
     left: 0;
   }
 }
+@media (max-width: 450px) {
+  header .title-name {
+    font-size: 1.5rem;
+  }
+}
 
 section {
   display: flex;
   align-items: center;
 }
 
-.about {
+.home {
   background: url("../Img/LIUBPxK.jpg") no-repeat center/cover;
   background-attachment: fixed;
   height: 100vh;
 }
-.about .about-content {
+.home .home-content {
   display: flex;
   flex-direction: row;
   width: 50rem;
   margin: 0 auto;
 }
-.about .about-content h1 {
+.home .home-content h1 {
   font-size: 50px;
   font-weight: 500;
 }
 @media (max-width: 600px) {
-  .about .about-content {
+  .home .home-content {
     display: flex;
     flex-direction: column;
   }

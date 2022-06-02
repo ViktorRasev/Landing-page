@@ -7,13 +7,13 @@ const navMenu = document.querySelector(".nav-menu")
 
 // Nav menu links 
 const navLinks = document.querySelectorAll(".nav-link")
-const aboutBtn = document.querySelector(".about-link")
+const homeBtn = document.querySelector(".home-link")
 const portfolioBtn = document.querySelector(".portfolio-link")
 const skillsBtn = document.querySelector(".skills-link")
 const contactBtn = document.querySelector(".contact-link")
 
 //Page sections for scrolling
-const aboutSection = document.querySelector(".about")
+const homeSection = document.querySelector(".home")
 const portfolioSection = document.querySelector(".portfolio")
 const skillsSection = document.querySelector(".skills")
 const contactSection = document.querySelector(".contact")
@@ -34,9 +34,10 @@ navLinks.forEach((link) => {
 
 
 
+
 // Scrolling via nav menu 
 function navScroll(navBtn, section) { 
-navBtn.addEventListener("click", (e) => {
+return navBtn.addEventListener("click", (e) => {
     e.preventDefault()
     window.scrollTo({
         top:section.offsetTop
@@ -44,7 +45,7 @@ navBtn.addEventListener("click", (e) => {
 })
 }
 
-navScroll(aboutBtn, aboutSection)
+navScroll(homeBtn, homeSection)
 navScroll(portfolioBtn, portfolioSection)
 navScroll(skillsBtn, skillsSection)
 navScroll(contactBtn, contactSection)
