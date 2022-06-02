@@ -57,6 +57,7 @@
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
   color: rgb(239, 239, 239);
+  scroll-behavior: smooth;
 }
 
 a {
