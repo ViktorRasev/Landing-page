@@ -98,20 +98,30 @@ section {
   height: 100vh;
 
   .home-content {
-    @include flex-row();
-    @include centered-div();
+    @include flex-column();
+    margin: 0 auto;
+    align-items: center;
+ 
 
     h1 {
-      font-size: 50px;
+      font-size: 4rem;
       font-weight: 500;
     }
   
     @media (max-width:600px) {
-      @include flex-column()
+      @include flex-column();
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+      }
     }
   }
-
 } 
+
+.cosmonaut-img { 
+  width: 15rem;
+}
 
 // =============================== 2 SECTION (PORTFOLIO) ============================
 .portfolio {
@@ -143,7 +153,7 @@ section {
     border-radius: 20px;
     border: 2px white solid;
     transition: all 200ms ease-in-out;
-
+  
     &:hover {
       border: 4px aqua solid;
       cursor: pointer;

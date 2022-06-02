@@ -141,12 +141,12 @@ section {
 }
 .home .home-content {
   display: flex;
-  flex-direction: row;
-  width: 50rem;
+  flex-direction: column;
   margin: 0 auto;
+  align-items: center;
 }
 .home .home-content h1 {
-  font-size: 50px;
+  font-size: 4rem;
   font-weight: 500;
 }
 @media (max-width: 600px) {
@@ -154,6 +154,14 @@ section {
     display: flex;
     flex-direction: column;
   }
+  .home .home-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+.cosmonaut-img {
+  width: 15rem;
 }
 
 .portfolio {
