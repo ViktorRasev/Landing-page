@@ -23,7 +23,6 @@
         height: 40px;
         cursor: pointer;
         transition: all .5 ease-in-out;
-      
       }
       
       .menu-btn__burger {
@@ -51,9 +50,12 @@
         &::after { 
           transform: translateY(10px);
         }
+        @media (min-width:600px) {
+           display: none;
+          }
       }
       
-      .menu-btn.open .menu-btn__burger { 
+      .menu-btn.active .menu-btn__burger { 
         transform: translateX(-50px);
         background: transparent;
         box-shadow: none;

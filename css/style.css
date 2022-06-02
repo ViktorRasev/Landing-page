@@ -1,3 +1,56 @@
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.5 ease-in-out;
+}
+
+.menu-btn__burger {
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5 ease-in-out;
+}
+.menu-btn__burger::before, .menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-10px);
+}
+.menu-btn__burger::after {
+  transform: translateY(10px);
+}
+@media (min-width: 600px) {
+  .menu-btn__burger {
+    display: none;
+  }
+}
+
+.menu-btn.active .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.active .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.active .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,14 +89,41 @@ header h1 {
 header nav {
   width: 25rem;
 }
-header ul {
+header .nav-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 600px) {
+  header header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav {
+    position: relative;
+    width: 0;
+    margin-right: 20px;
+  }
+  header .nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 100%;
+    top: 60px;
+    width: 100%;
+    height: 70%;
+    background-color: #1c1c1c;
+    text-align: center;
+    transition: all 200ms ease-in-out;
+  }
+  header .nav-menu.active {
+    left: 0;
+  }
 }
 
 section {
-  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -51,6 +131,7 @@ section {
 .about {
   background: url("../Img/LIUBPxK.jpg") no-repeat center/cover;
   background-attachment: fixed;
+  height: 100vh;
 }
 .about .about-content {
   display: flex;
@@ -61,6 +142,12 @@ section {
 .about .about-content h1 {
   font-size: 50px;
   font-weight: 500;
+}
+@media (max-width: 600px) {
+  .about .about-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .portfolio {
@@ -80,6 +167,7 @@ section {
   flex-direction: row;
   justify-content: space-around;
   width: 90%;
+  margin-bottom: 200px;
 }
 .projects img {
   width: 90%;
@@ -106,7 +194,7 @@ section {
   flex-direction: row;
   justify-content: space-between;
   width: 60%;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 .skills_contact .skills_contact-content li {
   display: flex;
@@ -118,7 +206,7 @@ section {
   flex-direction: row;
 }
 .skills_contact .skills_contact-content img {
-  width: 3rem;
+  width: 3em;
 }
 .skills_contact .skills_contact-content p {
   margin: 20px 0 0 10px;
@@ -126,52 +214,4 @@ section {
 }
 .skills_contact .skills_contact-content p:hover {
   color: aqua;
-}
-
-.menu-btn {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  transition: all 0.5 ease-in-out;
-}
-
-.menu-btn__burger {
-  width: 30px;
-  height: 3px;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  transition: all 0.5 ease-in-out;
-}
-.menu-btn__burger::before, .menu-btn__burger::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 3px;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-  transition: all 0.5s ease-in-out;
-}
-.menu-btn__burger::before {
-  transform: translateY(-10px);
-}
-.menu-btn__burger::after {
-  transform: translateY(10px);
-}
-
-.menu-btn.open .menu-btn__burger {
-  transform: translateX(-50px);
-  background: transparent;
-  box-shadow: none;
-}
-.menu-btn.open .menu-btn__burger::before {
-  transform: rotate(45deg) translate(35px, -35px);
-}
-.menu-btn.open .menu-btn__burger::after {
-  transform: rotate(-45deg) translate(35px, 35px);
 }/*# sourceMappingURL=style.css.map */

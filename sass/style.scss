@@ -1,5 +1,6 @@
 @import "partials/variables";
 @import "partials/mixins";
+@include Hamburger();
 
 * {
   margin: 0;
@@ -13,6 +14,7 @@ a {
   text-decoration: none;
   transition: all 200ms ease-in-out;
 }
+
 a:hover { 
   color: aqua
 }
@@ -40,14 +42,44 @@ header {
     width: 25rem;
   }
 
-  ul {
+  .nav-menu {
     @include flex-row();
     justify-content: space-around;
+    margin-bottom: 2.5rem;
   }
+
+ @media (max-width:600px) {
+    header { 
+      @include flex-row;
+      justify-content: space-between;
+    }
+
+    nav { 
+      position: relative;
+      width: 0;
+      margin-right: 20px;
+    }
+
+   .nav-menu { 
+    @include flex-column;
+    position: fixed;
+    left:100%;
+    top: 60px;
+    width: 100%;
+    height: 70%;
+    background-color: $bc-color;
+    text-align: center;
+    transition: all 200ms ease-in-out;
+   }
+
+   .nav-menu.active { 
+     left: 0;
+   }
+
+ }
 }
 
 section {
-  height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -56,6 +88,7 @@ section {
 .about {
   background: url("../Img/LIUBPxK.jpg") no-repeat center / cover;
   background-attachment: fixed;
+  height: 100vh;
 
   .about-content {
     @include flex-row();
@@ -65,7 +98,12 @@ section {
       font-size: 50px;
       font-weight: 500;
     }
+  
+    @media (max-width:600px) {
+      @include flex-column()
+    }
   }
+
 } 
 
 // =============================== 2 SECTION (PORTFOLIO) ============================
@@ -73,7 +111,11 @@ section {
   background: url("../Img/space_ship.jpg") no-repeat center / cover;
   @include flex-column();
   padding-top: 5rem;
+ 
 }
+
+
+
 
 .projects-title {
   margin-bottom:5rem;
@@ -84,6 +126,7 @@ section {
   @include flex-row();
   justify-content: space-around;
   width: 90%;
+  margin-bottom: 200px;
   
 
 
@@ -108,14 +151,15 @@ section {
 // =============================== 3 SECTION (SKILLS + CONTACT) =====================================
 
 .skills_contact {
-  background: url("../Img/LIUBPxK.jpg") no-repeat center / cover;
+  background: url("../Img/LIUBPxK.jpg") no-repeat center/cover;
   background-attachment: fixed;
+
 
   .skills_contact-content {
     @include flex-row();
     justify-content: space-between;
     width: 60%;
-    margin: 0 auto;
+    margin: 30px auto;
 
     li {
       @include flex-row;
@@ -127,7 +171,7 @@ section {
     }
 
     img {
-      width: 3rem;
+      width: 3em;
     }
 
     p {
@@ -142,4 +186,3 @@ section {
 
 
 // BURGER  =================
-@include Hamburger();
