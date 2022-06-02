@@ -180,6 +180,15 @@ section {
   border: 4px aqua solid;
   cursor: pointer;
 }
+@media (max-width: 600px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects .project1 {
+    margin-bottom: 4rem;
+  }
+}
 
 .project {
   text-align: center;
@@ -195,6 +204,15 @@ section {
   justify-content: space-between;
   width: 60%;
   margin: 30px auto;
+}
+.skills_contact .skills_contact-content .skills {
+  margin-top: 3rem;
+}
+.skills_contact .skills_contact-content .contact {
+  margin-top: 3rem;
+}
+.skills_contact .skills_contact-content h2 {
+  font-size: 2rem;
 }
 .skills_contact .skills_contact-content li {
   display: flex;
@@ -212,6 +230,9 @@ section {
   margin: 20px 0 0 10px;
   transition: all 200ms ease-in-out;
 }
-.skills_contact .skills_contact-content p:hover {
-  color: aqua;
+@media (max-width: 600px) {
+  .skills_contact .skills_contact-content {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
