@@ -205,11 +205,13 @@ section {
   }
 }
 
-.project1-code, .project2-code {
+.project1-code,
+.project2-code {
   font-family: "Press Start 2P", cursive;
   font-size: small;
 }
-.project1-code:hover, .project2-code:hover {
+.project1-code:hover,
+.project2-code:hover {
   color: aqua;
 }
 
