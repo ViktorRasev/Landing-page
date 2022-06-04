@@ -97,14 +97,8 @@ header .nav-menu {
   margin-bottom: 2.5rem;
 }
 @media (max-width: 600px) {
-  header .title-name a {
-    width: 100%;
-    margin: 0 auto;
-  }
-  header nav {
-    position: relative;
-    width: 0;
-    margin-right: 20px;
+  header .title-name {
+    position: absolute;
   }
   header .nav-menu {
     display: flex;

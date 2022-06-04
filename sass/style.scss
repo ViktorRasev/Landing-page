@@ -49,23 +49,21 @@ header {
   }
 
  @media (max-width:600px) {
-    header { 
-      
-      // @include flex-row;
-      // justify-content: space-between;
-    }
-    // .title-name { 
+   
+    .title-name { 
+      position: absolute;
     //  width: 100%;
-    .title-name a { 
-      width: 100%;
-      margin: 0 auto;
+    //  margin: 0 auto;
+    // .title-name a { 
+    //  position: absolute;
+    //  top: 0;
     }
     // }
-    nav { 
-      position: relative;
-      width: 0;
-      margin-right: 20px;
-    }
+    // nav { 
+    //   position: relative;
+    //   width: 0;
+    //   margin-right: 20px;
+    // }
 
    .nav-menu { 
     @include flex-column;
