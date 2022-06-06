@@ -138,13 +138,16 @@ section {
 .home {
   background: url("../Img/LIUBPxK.jpg") no-repeat center/cover;
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 100vh;
 }
 .home .home-content {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   align-items: center;
+}
+.home .home-content .cosmonaut-img {
+  margin-top: 4rem;
 }
 .home .home-content h1 {
   font-size: 4rem;
@@ -158,6 +161,34 @@ section {
   .home .home-content h1 {
     font-size: 1.7rem;
     font-weight: 700;
+  }
+  .home .home-content .cosmonaut-img {
+    width: 7rem;
+  }
+}
+
+.about {
+  margin: 3rem 1rem;
+  padding: 1rem;
+  background-color: rgba(28, 28, 28, 0.8117647059);
+  border-radius: 20px;
+}
+.about h3 {
+  padding: 1rem;
+  font-size: 2rem;
+}
+.about p {
+  max-width: 610px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+@media (max-width: 600px) {
+  .about h3 {
+    font-size: 1.4rem;
+  }
+  .about p {
+    font-size: 1.1rem;
   }
 }
 

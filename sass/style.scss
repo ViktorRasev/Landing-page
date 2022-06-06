@@ -95,12 +95,16 @@ section {
 .home {
   background: url("../Img/LIUBPxK.jpg") no-repeat center / cover;
   background-attachment: fixed;
-  height: 100vh;
+  min-height: 100vh;
 
   .home-content {
     @include flex-column();
     margin: 0 auto;
     align-items: center;
+
+    .cosmonaut-img {
+      margin-top: 4rem;
+    }
 
     h1 {
       font-size: 4rem;
@@ -114,8 +118,44 @@ section {
         font-size: 1.7rem;
         font-weight: 700;
       }
+
+      .cosmonaut-img {
+        width: 7rem;
+      }
     }
   }
+}
+
+.about {
+  margin: 3rem 1rem;
+  padding: 1rem;
+ 
+  // background-color: rgba(0, 255, 255, 0.082);
+  background-color: #1c1c1ccf;
+  border-radius: 20px;
+
+  h3 {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  p {
+    max-width: 610px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width:600px) {
+    h3 { 
+      font-size: 1.4rem;
+    }
+
+    p { 
+      font-size: 1.1rem;
+    }
+  }
+
 }
 
 .cosmonaut-img {
@@ -190,6 +230,7 @@ section {
     .skills {
       margin-top: 3rem;
     }
+    
     .contact {
       margin-top: 3rem;
     }
