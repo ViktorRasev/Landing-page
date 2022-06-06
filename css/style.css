@@ -137,7 +137,6 @@ section {
 
 .home {
   background: url("../Img/LIUBPxK.jpg") no-repeat center/cover;
-  background-attachment: fixed;
   min-height: 100vh;
 }
 .home .home-content {
@@ -252,7 +251,6 @@ section {
 
 .skills_contact {
   background: url("../Img/LIUBPxK.jpg") no-repeat center/cover;
-  background-attachment: fixed;
 }
 .skills_contact .skills_contact-content {
   display: flex;
