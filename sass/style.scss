@@ -122,7 +122,6 @@ section {
       .cosmonaut-img {
         width: 7rem;
       }
-
     }
   }
 }
@@ -130,8 +129,6 @@ section {
 .about {
   margin: 3rem 1rem;
   padding: 1rem;
- 
-  // background-color: rgba(0, 255, 255, 0.082);
   background-color: #1c1c1ccf;
   border-radius: 20px;
 
@@ -147,16 +144,15 @@ section {
     letter-spacing: 1px;
   }
 
-  @media (max-width:600px) {
-    h3 { 
+  @media (max-width: 600px) {
+    h3 {
       font-size: 1.4rem;
     }
 
-    p { 
+    p {
       font-size: 1.1rem;
     }
   }
-
 }
 
 .cosmonaut-img {
@@ -231,7 +227,7 @@ section {
     .skills {
       margin-top: 3rem;
     }
-    
+
     .contact {
       margin-top: 3rem;
     }
@@ -265,8 +261,9 @@ section {
 }
 
 // background-attachment: fixed; - was not very smooth on mobile so it's back to default
-@media (max-width: 600px) { 
-  .home, .skills_contact { 
+@media (max-width: 600px) {
+  .home,
+  .skills_contact {
     background-attachment: scroll;
   }
 }

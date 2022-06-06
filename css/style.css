@@ -295,7 +295,8 @@ section {
 }
 
 @media (max-width: 600px) {
-  .home, .skills_contact {
+  .home,
+.skills_contact {
     background-attachment: scroll;
   }
 }/*# sourceMappingURL=style.css.map */
