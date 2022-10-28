@@ -203,7 +203,16 @@ section {
   padding-top: 5rem;
 }
 
-.projects-title {
+.projects-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.projects-header img {
+  width: 2rem;
+}
+.projects-header .projects-title {
   margin-bottom: 5rem;
   font-size: 2em;
 }

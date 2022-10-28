@@ -34,6 +34,7 @@ header {
   width: 100%;
   height: 4rem;
 
+
   h1 {
     font-weight: 400;
   }
@@ -166,10 +167,23 @@ section {
   padding-top: 5rem;
 }
 
-.projects-title {
-  margin-bottom: 5rem;
-  font-size: 2em;
+.projects-header { 
+display: flex;
+flex-direction: column;
+align-items: center;
+gap:1rem;
+
+  img { 
+    width: 2rem;
+  }
+
+  .projects-title {
+    margin-bottom: 5rem;
+    font-size: 2em;
+  }
+  
 }
+
 
 .projects {
   @include flex-row();
