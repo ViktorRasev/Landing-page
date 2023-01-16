@@ -18,6 +18,9 @@
     <link rel="shortcut icon" type="image" href="./Img/Carton-space-rocket-title.png">
     <title>Viktor Rašev</title>
 
+    <!-- Swiper CSS  -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
 </head>
 <body>
  <header>
@@ -56,20 +59,32 @@
                 <a href="https://github.com/ViktorRasev?tab=repositories"><img class="github-link" src="./Img/icons/github-svgrepo-com.svg" alt="github icon"></a>
                 <h1 class="projects-title">Deployed projects.</h1>
             </div>
-                <div class="projects">
-                    <div class="project project1">
-                        <h2>E-shop</h2>
-                      <a href="https://viktorrasev-simple-eshop.netlify.app/" target="_blank"><img src="./Img/Aviato_img.png" alt="First Project"></a> 
-                      <h3><a href="https://github.com/ViktorRasev/Simple-E-shop.git" target="_blank" class="project1-code">< code ></code></a></h3>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="projects swiper-wrapper">
+                    <!-- <div class="swiper-wrapper"> -->
+                        <div class="project swiper-slide">
+                            <h2>Cookbook</h2>
+                        <a href="https://cookbook-client-nine.vercel.app/" target="_blank"><img src="./Img/Cookbook_img.png" alt="Second Project"></a> 
+                        <h3><a href="https://github.com/ViktorRasev/Cookbook-client" target="_blank" class="project1-code">< code ></code></a></h3>
+                        </div>
+                        <div class="project swiper-slide">
+                            <h2>E-shop</h2>
+                        <a href="https://viktorrasev-simple-eshop.netlify.app/" target="_blank"><img src="./Img/Aviato_img.png" alt="First Project"></a> 
+                        <h3><a href="https://github.com/ViktorRasev/Simple-E-shop.git" target="_blank" class="project2-code">< code ></code></a></h3>
+                        </div>
+                        <div class="project swiper-slide">
+                            <h2>To Do List</h2>
+                        <a href="https://viktorrasev-todolist.netlify.app/" target="_blank"><img src="./Img/Todo_img.png" alt="Second Project"></a> 
+                        <h3><a href="https://github.com/ViktorRasev/ToDo-List.git" target="_blank" class="project3-code">< code ></code></a></h3>
+                        </div>
                     </div>
-                    
-                    <div class="project project2">
-                        <h2>To Do List</h2>
-                      <a href="https://viktorrasev-todolist.netlify.app/" target="_blank"><img src="./Img/To-do_img.png" alt="Second Projectw"></a> 
-                      <h3><a href="https://github.com/ViktorRasev/ToDo-List.git" target="_blank" class="project2-code">< code ></code></a></h3>
-                    </div>
+
                 </div>
-           
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
         <section class="skills_contact">
             <div class="skills_contact-content">
@@ -98,6 +113,13 @@
         </div>
         </section>
     </main>
-    <script src="app.js"></script>
+   
+   
 </body>
+
+ <!-- Swiper JS  -->
+ <script src="./swiper-bundle.min.js"></script>
+
+ <!-- JS -->
+ <script src="app.js"></script>
 </html>

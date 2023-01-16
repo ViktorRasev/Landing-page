@@ -34,7 +34,6 @@ header {
   width: 100%;
   height: 4rem;
 
-
   h1 {
     font-weight: 400;
   }
@@ -164,69 +163,74 @@ section {
 .portfolio {
   background: url("../Img/space_ship.jpg") no-repeat center / cover;
   @include flex-column();
-  padding-top: 5rem;
+  padding-top: 3rem;
+  height: 90vh;
 }
 
-.projects-header { 
-display: flex;
-flex-direction: column;
-align-items: center;
-gap:1rem;
+@media (max-width: 600px) {
+  .portfolio {
+    height: 70vh;
+  }
+}
 
-  img { 
+.projects-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  img {
     width: 2rem;
   }
 
   .projects-title {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     font-size: 2em;
   }
-  
 }
 
+.slide-container {
+  width: 95%;
+}
 
+.slide-content {
+  margin: 2rem;
+}
 .projects {
-  @include flex-row();
-  justify-content: space-around;
-  width: 90%;
-  margin-bottom: 200px;
+  text-align: center;
 
   img {
-    width: 90%;
-    margin: 30px auto 15px auto;
+    width: 80%;
+    max-width: 800px;
     border-radius: 20px;
     border: 2px white solid;
     transition: all 200ms ease-in-out;
 
     &:hover {
-      border: 3px $hover-color solid;
+      border: 2px $hover-color solid;
       cursor: pointer;
-    }
-  }
-
-  @media (max-width: 600px) {
-    @include flex-column;
-
-    .project1 {
-      margin-bottom: 4rem;
     }
   }
 }
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: aqua;
+}
+.swiper-pagination-bullet {
+  background-color: aqua !important;
+}
 .project1-code,
-.project2-code {
+.project2-code,
+.project3-code {
   font-family: "Press Start 2P", cursive;
   font-size: small;
+  font-weight: 300;
 
   &:hover {
     color: $hover-color;
   }
 }
-
-.project {
-  text-align: center;
-}
-
 // =============================== 3 SECTION (SKILLS + CONTACT) =====================================
 .skills_contact {
   background: url("../Img/LIUBPxK.jpg") no-repeat center/cover;
@@ -274,7 +278,6 @@ gap:1rem;
   }
 }
 
-// background-attachment: fixed; - was not very smooth on mobile so it's back to default
 @media (max-width: 600px) {
   .home,
   .skills_contact {
