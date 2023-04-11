@@ -170,6 +170,7 @@ section {
 @media (max-width: 600px) {
   .portfolio {
     height: 70vh;
+    padding-top: 0;
   }
 }
 
@@ -194,7 +195,7 @@ section {
 }
 
 .slide-content {
-  margin: 2rem;
+  margin: 1rem;
 }
 .projects {
   text-align: center;
