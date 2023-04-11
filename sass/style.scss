@@ -198,8 +198,8 @@ section {
 }
 .projects {
   text-align: center;
-
-  img {
+}
+.project-image {
     width: 80%;
     max-width: 800px;
     border-radius: 20px;
@@ -209,6 +209,17 @@ section {
     &:hover {
       border: 2px $hover-color solid;
       cursor: pointer;
+    }
+
+}
+
+.used-in-project { 
+  img {
+    width: 2rem;
+  }
+  @media (max-width: 600px) {
+    img {
+      width: 1rem;
     }
   }
 }

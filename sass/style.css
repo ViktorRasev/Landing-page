@@ -233,26 +233,9 @@ section {
 .projects {
   text-align: center;
 }
-
-.project-image {
-  width: 80%;
-  max-width: 800px;
-  border-radius: 20px;
-  border: 2px white solid;
-  transition: all 200ms ease-in-out;
-}
-.project-image:hover {
-  border: 2px aqua solid;
-  cursor: pointer;
-}
-
-.used-in-project img {
-  width: 2rem;
-}
-@media (max-width: 600px) {
-  .used-in-project img {
-    width: 1rem;
-  }
+.projects img {
+  width: 100px;
+  background-color: red;
 }
 
 .swiper-button-next::after,
@@ -326,4 +309,6 @@ section {
   .skills_contact {
     background-attachment: scroll;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
